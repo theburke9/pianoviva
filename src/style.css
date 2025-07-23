@@ -3,9 +3,10 @@
 @theme {
     --color-background: #fffff;
     --color-primary: #B08968;
-    --color-secondary: #7F5539;
+    --color-accent: #E6CCB2;
     --color-foreground: #121212;
-    --color-onSecondary: #ffffff;
+    --color-onAccent: #ffffff;
+    --color-onPrimary: #ffffff;
 }
 
 body {
