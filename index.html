@@ -10,13 +10,19 @@
     <title>Pianoviva</title>
 
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
-    <div class="container mx-auto px-4 mt-2 flex justify-center md:justify-end">
+    <nav class="container mx-auto px-4 mt-2 flex justify-between items-center">
+      <ul class="flex space-x-6">
+        <li><a href="#pricing" class="hover:underline transition duration-200">Tarifs</a></li>
+        <li><a href="#contact" class="hover:underline transition duration-200">Contact</a></li>
+     </ul>
       <div class="bg-primary inline text-onAccent px-4 py-2 rounded-md font-bold">
-        <p class="text-sm md:text-md">+33 7 83 29 81 06</p>
+        <p class="text-sm md:text-md"><i class="fas fa-phone-alt text-onPrimary mr-3"></i> 07 83 29 81 06</p>
       </div>
-    </div>
+    </nav>
+
     <header class="container mx-auto py-8 md:py-12 px-4 p-2 gap-8 flex flex-col lg:flex-row text-center lg:text-left">
       
       <div class="flex-1">
@@ -37,76 +43,94 @@
         </div>
         
       </div>
-      <div class="flex-1 p-2 bg-primary hidden lg:block">
+      <div id="headerImg" class="flex-1 p-2 bg-primary rounded-xl shadow-xl">
       </div>
     </header>
 
-    <section id="pricing" class="py-16 bg-primary">
+    <section id="pricing" class="py-24 bg-primary">
       <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <!-- Cours particulier -->
-              <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-200">
-                  <h3 class="text-xl font-semibold mb-4">Cours particulier</h3>
-                  <p class="text-primary text-3xl font-bold mb-4">40€<span class="text-base font-normal"> / heure</span></p>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-200">
+                  <h3 class="text-xl font-semibold mb-4">Inscription</h3>
+                  <p class="text-primary text-3xl font-bold mb-4">25€<span class="text-base font-normal"> / personne</span></p>
                   <ul class="space-y-2 mb-6">
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Cours individuel</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Programme personnalisé</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Horaires flexibles</li>
+                    <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Approche ludique</li>
+                    <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Accès à la méthode Pianoviva</li>
+                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Suivi personnalisé selon votre niveau et vos objectifs</li>
                   </ul>
               </div>
 
-              <!-- Cours en duo -->
               <div class="relative bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-200 transform hover:-translate-y-1">
-                  <div class="absolute top-2 right-2 bg-primary text-onPrimary px-3 py-1 rounded-lg text-sm font-medium">Populaire</div>
-                  <h3 class="text-xl font-semibold mb-4">Cours en duo</h3>
-                  <p class="text-primary text-3xl font-bold mb-4">30€<span class="text-base font-normal"> / personne</span></p>
-                  <ul class="space-y-2 mb-6">
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Cours à deux élèves</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Apprentissage convivial</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Réduction pour les amis</li>
-                  </ul>
-              </div>
+                <div class="absolute top-2 right-2 bg-primary text-onPrimary px-3 py-1 rounded-lg text-sm font-medium">Populaire</div>
+                <h3 class="text-xl font-semibold mb-4">Cours à l'année</h3>
+                <p class="text-primary text-3xl font-bold mb-4">600€<span class="text-base font-normal"> / personne</span></p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Méthode Pianoviva</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Cours individuel ou semi-individuel</li>
+                    <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Tous styles abordés : classique, jazz, pop, impro...</li>
+                </ul>
+            </div>
 
-              <!-- Cours enfant -->
               <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-200">
-                  <h3 class="text-xl font-semibold mb-4">Cours enfant</h3>
-                  <p class="text-primary text-3xl font-bold mb-4">25€<span class="text-base font-normal"> / 45 min</span></p>
+                  <h3 class="text-xl font-semibold mb-4">Cours à la carte</h3>
+                  <p class="text-primary text-3xl font-bold mb-4">250€<span class="text-base font-normal"> / 10 cours</span></p>
                   <ul class="space-y-2 mb-6">
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Méthode adaptée</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Approche ludique</li>
-                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Éveil musical</li>
+                    <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Méthode Pianoviva</li>
+                    <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>  Cours individuel ou ou semi-individuel</li>
+                      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Tous styles abordés : classique, jazz, pop, impro...</li>
                   </ul>
-              </div>
+              </div>             
           </div>
       </div>
   </section>
 
-    <section>
-      <iframe title="Carte de l'emplacement de l'école de piano Pianoviva à Nîmes" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.955898344194!2d4.357892277707709!3d43.83601237109397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b42d096a21eefd%3A0xfe5259149a2b0985!2sMourier%20Guy!5e0!3m2!1sfr!2sfr!4v1753300319741!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+  <section id="location" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-xl md:text-3xl font-bold text-left mb-8">
+          <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+          À deux pas des arènes
+        </h2>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <iframe 
+                title="Carte de l'emplacement de l'école de piano Pianoviva à Nîmes" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.955898344194!2d4.357892277707709!3d43.83601237109397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b42d096a21eefd%3A0xfe5259149a2b0985!2sMourier%20Guy!5e0!3m2!1sfr!2sfr!4v1753300319741!5m2!1sfr!2sfr" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-lg"
+            ></iframe>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-background">
       <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-left mb-12">Contactez-nous</h2>
+          <h2 class="text-xl md:text-3xl font-bold text-left mb-12">
+            <i class="fas fa-envelope text-primary mr-3"></i>
+            Contactez-nous
+          </h2>
           <div class="flex flex-col md:flex-row gap-8">
               <div class="md:w-1/2">
                   <form class="space-y-4" action="https://formspree.io/f/xzzvrvjj" method="POST">
                       <div>
-                          <label for="name" class="block mb-1 font-medium">Nom complet</label>
-                          <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
+                          <label for="name" class="block mb-1 font-medium">Nom complet <span class="text-red-500">*</span></label>
+                          <input required type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
                       </div>
                       <div>
-                          <label for="email" class="block mb-1 font-medium">Email</label>
-                          <input type="email" id="email"  name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
+                          <label for="email" class="block mb-1 font-medium">Email <span class="text-red-500">*</span></label>
+                          <input required type="email" id="email"  name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
                       </div>
                       <div>
-                          <label for="phone" class="block mb-1 font-medium">Téléphone</label>
-                          <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
+                          <label for="phone" class="block mb-1 font-medium">Téléphone <span class="text-red-500">*</span></label>
+                          <input required type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200">
                       </div>
                       <div>
-                          <label for="message" class="block mb-1 font-medium">Message</label>
-                          <textarea id="message" rows="4" name="message" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200"></textarea>
+                          <label for="message" class="block mb-1 font-medium" >Message <span class="text-red-500">*</span></label>
+                          <textarea required id="message" rows="4" name="message" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition duration-200"></textarea>
                       </div>
                       <button type="submit" class="bg-primary text-onPrimary px-6 py-3 rounded-lg hover:bg-primary/90 transition duration-200 font-medium w-full cursor-pointer">Envoyer le message</button>
                   </form>
@@ -115,16 +139,20 @@
                   <h3 class="text-xl font-semibold mb-4">Coordonnées</h3>
                   <div class="space-y-4">
                       <div class="flex items-start">
+                          <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
                           <p>1 rue de la violette, 3000, Nîmes</p>
                       </div>
                       <div class="flex items-center">
-                          <p>+33 7 83 29 81 06</p>
+                          <i class="fas fa-phone-alt text-primary mr-3"></i>
+                          <p>07 83 29 81 06</p>
                       </div>
                       <div class="flex items-center">
+                          <i class="fas fa-envelope text-primary mr-3"></i>
                           <p>gv.mourier@gmail.com</p>
                       </div>
                       <div class="flex items-center">
-                          <p>Lundi-Vendredi: 9h-19h<br>Samedi: 10h-15h</p>
+                          <i class="fas fa-clock text-primary mr-3"></i>
+                          <p>Lundi-Jeudi: 14h-19h</p>
                       </div>
                   </div>
               </div>
