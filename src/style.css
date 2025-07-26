@@ -22,3 +22,7 @@ body {
 .section {
     height: 500px;
 }
+
+body {
+    background: url('/topography.svg')
+}
